@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <button onclick="add()">ADD USER</button>
+    <script>
+
+        function add() {
+            let users = [];
+
+
+            let numUsers = parseInt(prompt("How many users do you want to add?"));
+
+
+            for (let i = 0; i < numUsers; i++) {
+                let firstName = prompt("Enter your first name:");
+                let lastName = prompt("Enter your last name:");
+                let age = parseInt(prompt("Enter your age:"));
+
+
+                let user = {
+                    firstName: firstName,
+                    lastName: lastName,
+                    age: age
+                };
+
+
+                users.push(user);
+            }
+        }
+        console.log(users);
+
+
+    </script>
+</body>
+
+</html>
